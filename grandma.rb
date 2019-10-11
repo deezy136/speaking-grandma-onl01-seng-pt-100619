@@ -18,13 +18,19 @@ def speak_to_grandma(phrase)
   
   new_phrase = 'I LOVE YOU GRANDMA!'
   
-  if !phrase.upcase
+  if phrase != phrase.upcase
+  p "HUH?! SPEAK UP, SONNY!"
     return "HUH?! SPEAK UP, SONNY!"
     
-    elsif phrase.upcase 
+    elsif phrase.upcase != 'I LOVE YOU GRANDMA!'
+    p "NO, NOT SINCE 1938!"
      return "NO, NOT SINCE 1938!"
       
     else phrase == 'I LOVE YOU GRANDMA!'
+    p "I LOVE YOU TOO PUMPKIN!"
       return "I LOVE YOU TOO PUMPKIN!"
 end 
 end 
+
+speak_to_grandma('Hi Nana, how are you?')
+speak_to_grandma('I LOVE OU GRANDMA!')
